@@ -1,0 +1,13 @@
+python run_predicate_classification.py \
+--task_name=SKE_2019 \
+--do_train=true \
+--do_eval=false \
+--data_dir=/media/ding/Files/ubuntu_study/NLP/Entity-Relation-Extraction/bin/predicate_classifiction/classification_data \
+--vocab_file=/media/ding/Files/ubuntu_study/Datasets/chinese_L-12_H-768_A-12/vocab.txt \
+--bert_config_file=/media/ding/Files/ubuntu_study/Datasets/chinese_L-12_H-768_A-12/bert_config.json \
+--init_checkpoint=/media/ding/Files/ubuntu_study/Datasets/chinese_L-12_H-768_A-12/bert_model.ckpt \
+--max_seq_length=128 \
+--train_batch_size=8 \
+--learning_rate=2e-5 \
+--num_train_epochs=6.0 \
+--output_dir=./output/predicate_classification_model/epochs6/
